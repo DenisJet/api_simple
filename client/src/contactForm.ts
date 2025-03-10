@@ -1,4 +1,4 @@
-const API_ROUTE = "http://localhost:3000/contact";
+const API_ROUTE = "https://localhost:3000/contact";
 
 export function contactForm(element: HTMLFormElement) {
   element.addEventListener("submit", function (event) {
