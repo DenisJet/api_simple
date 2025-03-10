@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <form class="contactForm">
+      <h1>Form example</h1>
+      <div class="contactForm_item">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="contactForm_item">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="contactForm_item">
+        <label for="phone">Телефон:</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+
+      <div class="contactForm_item">
+        <label for="project_type">Тип проекта:</label>
+        <input type="text" id="project_type" name="project_type" required />
+      </div>
+
+      <div class="contactForm_item">
+        <label for="project_description">Описание проекта:</label>
+        <textarea
+          id="project_description"
+          name="project_description"
+        ></textarea>
+      </div>
+
+      <div class="contactForm_item">
+        <label for="budget_min">Бюджет (мин):</label>
+        <input type="number" id="budget_min" name="budget_min" required />
+      </div>
+
+      <div class="contactForm_item">
+        <label for="budget_max">Бюджет (макс):</label>
+        <input type="number" id="budget_max" name="budget_max" required />
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
